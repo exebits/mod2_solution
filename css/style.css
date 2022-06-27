@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+body{
+	margin: 0 25px;
+}
+.container{
+	
+}
+h1,
+h2
+{
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.75em;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+h2 {
+	font-size: 1.25em;
+    float: right;
+    margin: 0px;
+    padding: 5px 0;
+    min-width: 160px;
+    text-align: center;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+.main{
+	display: flex;
+	gap: 25px;
+	justify-content: center;
+}
+section{
+	border: 3px solid #000;
+	background-color: #999;
+	max-width: 480px;
+}
+p{
+	display: inline-block;
+    padding: 10px;
+    margin: 0;
+	font-weight: 600;
+}
+#chiken h2
+{
+	background-color:#d59898;
+}
+#beef h2
+{
+	background-color:#c14543;
+	color:#fff;
+}
+#sushi h2
+{
+	background-color:#e5d198;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	#chiken,#beef{
+		width:48%
+	}
+	section {
+		max-width: 99%;
+	}
+	.main{
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 767px){
+	.main{
+		flex-wrap: wrap;
+	}
+}
